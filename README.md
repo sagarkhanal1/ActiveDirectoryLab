@@ -9,6 +9,11 @@
         <li><b>PowerShell</b></li>
         <li><b>Active Directory Users and Computers</b></li>
         <li><b>DHCP Server Management</b></li>
+        <li><b>Routing and Remote Access Service (RRAS) Management</b></li>
+        <li><b>VirtualBox</b></li>
+        <li><b>Windows Server 2022 Server Manager</b></li>
+        <li><b>System Properties (Computer Name/ Domain Changes)</b></li>
+        <li><b>Windows 10 Settings</b></li>
     </ul>
 
  <h2>Environments Used</h2>
@@ -70,6 +75,26 @@
 <br />
 <b>RAS NAT Configured:</b> Network Address Translation (NAT) is configured within RRAS to allow internal network devices to access external networks, such as the internet.<br/><br />
 <img src="https://i.imgur.com/hd2suG4.png" height="80%" width="80%" alt="DHCP Configuration"/>
+<br />
+<br />
+<b>Installing Windows 10 Client: </b> This step involves setting up a virtual machine in VirtualBox and installing Windows 10 (21H2) to act as a client machine within the network, enabling interaction with the configured Windows Server environment. <br/><br />
+<img src="https://i.imgur.com/rTWmOCn.png" height="80%" width="80%" alt="DHCP Configuration"/>
+<br />
+<br />
+<b>Displaying Network Configuration in Windows 10 Client </b> This step shows the network configuration details of a Windows 10 client, retrieved using the 'ipconfig' command in Command Prompt, including the IPv4 address, subnet mask, and default gateway assigned by the DHCP server.<br/><br />
+<img src="https://i.imgur.com/eepQrfq.png" height="80%" width="80%" alt="DHCP Configuration"/>
+<br />
+<br />
+<b>Joining Windows 10 Client to the Domain </b> The Windows 10 client (CLIENT1) is configured to join the SAGARDOMAIN domain, enabling it to authenticate and access network resources managed by the Domain Controller.<br/><br />
+<img src="https://i.imgur.com/eepQrfq.png" height="80%" width="80%" alt="DHCP Configuration"/>
+<br />
+<br />
+<b> Logging into Windows 10 Client with Domain Credentials </b> A domain user (e.g., skhanal) logs into the Windows 10 client using credentials from SAGARDOMAIN, verifying successful domain integration.<br/><br />
+<img src="https://i.imgur.com/eepQrfq.png" height="80%" width="80%" alt="DHCP Configuration"/>
+<br />
+<br />
+<b>Verifying DHCP Lease </b> The DHCP server assigns an IP address (e.g., 172.16.0.100) to the client, which is verified through the DHCP management console on the Windows Server. <br/><br />
+<img src="https://i.imgur.com/eepQrfq.png" height="80%" width="80%" alt="DHCP Configuration"/>
 <br />
 <br />
 </p>
